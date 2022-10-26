@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id = "mc" class="com.example.demo.MissedCalled"> </bean>
+    <bean id = "ht" class="com.example.demo.HeeloTune"> </bean>
+    <bean id = "du" class="com.example.demo.DataUsage"> </bean>
+
+    <bean id = "jio" class="com.example.demo.Jio">
+        <property name="service" ref="ht"> </property>
+    </bean>
+
+</beans>
+
